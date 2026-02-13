@@ -80,7 +80,7 @@ def create_task(task: TaskCreate):
 
 @app.get("/about",response_class=PlainTextResponse)
 def about_backend():
-    return "This is all backend-api"
+    return "This is all backend-api code for nxtdo app. It is built using FastAPI and Google Cloud Firestore as the database. The backend provides CRUD operations for tasks and some legacy endpoints for testing and checking. The app is designed to be deployed on Google Cloud Run and uses Firebase for authentication and other services."
 
 @app.get("/tasks")
 def list_tasks(limit: int = 100):
